@@ -1,0 +1,694 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose readDependencies loading dependencies from c:\git\node-express-angular\package.json
+5 warn package.json expapp@1.0.0 No description
+6 warn package.json expapp@1.0.0 No repository field.
+7 verbose install where, deps [ 'c:\\git\\node-express-angular',
+7 verbose install   [ 'mongodb',
+7 verbose install     'async',
+7 verbose install     'q',
+7 verbose install     'body-parser',
+7 verbose install     'connect-redis',
+7 verbose install     'express',
+7 verbose install     'express-session',
+7 verbose install     'fs',
+7 verbose install     'http-proxy',
+7 verbose install     'morgan',
+7 verbose install     'multer',
+7 verbose install     'xls-to-json',
+7 verbose install     'xlsx-to-json',
+7 verbose install     'gulp',
+7 verbose install     'gulp-develop-server',
+7 verbose install     'gulp-jshint',
+7 verbose install     'jsdoc',
+7 verbose install     'mocha',
+7 verbose install     'should',
+7 verbose install     'supertest' ] ]
+8 verbose install where, peers [ 'c:\\git\\node-express-angular', [] ]
+9 verbose installManyTop reading for lifecycle c:\git\node-express-angular\package.json
+10 info preinstall expapp@1.0.0
+11 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\async\package.json
+12 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\body-parser\package.json
+13 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\connect-redis\package.json
+14 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\express\package.json
+15 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\express-session\package.json
+16 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\fs\package.json
+17 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\gulp\package.json
+18 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\gulp-develop-server\package.json
+19 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\gulp-jshint\package.json
+20 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\http-proxy\package.json
+21 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\jsdoc\package.json
+22 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\mocha\package.json
+23 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\mongodb\package.json
+24 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\morgan\package.json
+25 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\multer\package.json
+26 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\mysql\package.json
+27 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\node-mysql\package.json
+28 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\should\package.json
+29 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\supertest\package.json
+30 verbose installManyTop reading scoped package data from c:\git\node-express-angular\node_modules\xls-to-json\package.json
+31 info package.json mocha@2.5.3 No README data
+32 info package.json fs@0.0.2 fs is also the name of a node core module.
+33 info package.json fs@0.0.2 No description
+34 info package.json fs@0.0.2 No repository field.
+35 info package.json fs@0.0.2 No README data
+36 info package.json node-mysql@0.4.2 No license field.
+37 verbose readDependencies loading dependencies from c:\git\node-express-angular\package.json
+38 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\async\package.json
+39 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\body-parser\package.json
+40 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\connect-redis\package.json
+41 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\express\package.json
+42 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\express-session\package.json
+43 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\fs\package.json
+44 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\gulp\package.json
+45 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\gulp-develop-server\package.json
+46 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\gulp-jshint\package.json
+47 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\http-proxy\package.json
+48 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\jsdoc\package.json
+49 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\mocha\package.json
+50 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\mongodb\package.json
+51 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\morgan\package.json
+52 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\multer\package.json
+53 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\mysql\package.json
+54 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\node-mysql\package.json
+55 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\should\package.json
+56 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\supertest\package.json
+57 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\xls-to-json\package.json
+58 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\.bin\gulp\package.json
+59 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\.bin\gulp.cmd\package.json
+60 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\.bin\jsdoc\package.json
+61 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\.bin\jsdoc.cmd\package.json
+62 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\.bin\mocha\package.json
+63 verbose targetResolver reading package data from c:\git\node-express-angular\node_modules\.bin\mocha.cmd\package.json
+64 verbose already installed skipping connect-redis@^3.0.1 c:\git\node-express-angular
+65 verbose already installed skipping express@^4.13.3 c:\git\node-express-angular
+66 verbose already installed skipping express-session@^1.12.1 c:\git\node-express-angular
+67 verbose already installed skipping fs@0.0.2 c:\git\node-express-angular
+68 verbose already installed skipping http-proxy@^1.12.0 c:\git\node-express-angular
+69 verbose already installed skipping morgan@^1.6.1 c:\git\node-express-angular
+70 verbose already installed skipping multer@^1.1.0 c:\git\node-express-angular
+71 verbose already installed skipping xls-to-json@^0.3.2 c:\git\node-express-angular
+72 silly cache add args [ 'xlsx-to-json@^0.2.4', null ]
+73 verbose cache add spec xlsx-to-json@^0.2.4
+74 silly cache add parsed spec Result {
+74 silly cache add   raw: 'xlsx-to-json@^0.2.4',
+74 silly cache add   scope: null,
+74 silly cache add   name: 'xlsx-to-json',
+74 silly cache add   rawSpec: '^0.2.4',
+74 silly cache add   spec: '>=0.2.4 <0.3.0',
+74 silly cache add   type: 'range' }
+75 silly addNamed xlsx-to-json@>=0.2.4 <0.3.0
+76 verbose addNamed ">=0.2.4 <0.3.0" is a valid semver range for xlsx-to-json
+77 silly addNameRange { name: 'xlsx-to-json', range: '>=0.2.4 <0.3.0', hasData: false }
+78 silly mapToRegistry name xlsx-to-json
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npmjs.org/
+81 silly mapToRegistry uri https://registry.npmjs.org/xlsx-to-json
+82 verbose addNameRange registry:https://registry.npmjs.org/xlsx-to-json not in flight; fetching
+83 verbose already installed skipping gulp@^3.9.0 c:\git\node-express-angular
+84 verbose already installed skipping gulp-develop-server@^0.5.0 c:\git\node-express-angular
+85 verbose already installed skipping gulp-jshint@^1.12.0 c:\git\node-express-angular
+86 verbose already installed skipping jsdoc@^3.4.0 c:\git\node-express-angular
+87 verbose already installed skipping mocha@^2.3.4 c:\git\node-express-angular
+88 verbose already installed skipping should@^7.1.1 c:\git\node-express-angular
+89 verbose already installed skipping supertest@^1.1.0 c:\git\node-express-angular
+90 verbose already installed skipping mongodb@* c:\git\node-express-angular
+91 verbose already installed skipping async@^1.5.0 c:\git\node-express-angular
+92 silly cache add args [ 'q@*', null ]
+93 verbose cache add spec q@*
+94 silly cache add parsed spec Result {
+94 silly cache add   raw: 'q@*',
+94 silly cache add   scope: null,
+94 silly cache add   name: 'q',
+94 silly cache add   rawSpec: '*',
+94 silly cache add   spec: '*',
+94 silly cache add   type: 'range' }
+95 silly addNamed q@*
+96 verbose addNamed "*" is a valid semver range for q
+97 silly addNameRange { name: 'q', range: '*', hasData: false }
+98 silly mapToRegistry name q
+99 silly mapToRegistry using default registry
+100 silly mapToRegistry registry https://registry.npmjs.org/
+101 silly mapToRegistry uri https://registry.npmjs.org/q
+102 verbose addNameRange registry:https://registry.npmjs.org/q not in flight; fetching
+103 verbose already installed skipping body-parser@^1.14.1 c:\git\node-express-angular
+104 verbose request uri https://registry.npmjs.org/xlsx-to-json
+105 verbose request no auth needed
+106 info attempt registry request try #1 at 2:27:48 PM
+107 verbose request id 2fce4bde46d5a02a
+108 verbose etag W/"5967b6a5-2e96"
+109 verbose lastModified Thu, 13 Jul 2017 18:06:29 GMT
+110 http request GET https://registry.npmjs.org/xlsx-to-json
+111 verbose request uri https://registry.npmjs.org/q
+112 verbose request no auth needed
+113 info attempt registry request try #1 at 2:27:49 PM
+114 verbose etag "BK6A0PX5ZY5A44YHBI2JG6MWO"
+115 http request GET https://registry.npmjs.org/q
+116 http 200 https://registry.npmjs.org/q
+117 verbose headers { server: 'nginx/1.10.1',
+117 verbose headers   'content-type': 'application/json',
+117 verbose headers   'last-modified': 'Thu, 19 Oct 2017 17:55:37 GMT',
+117 verbose headers   etag: 'W/"59e8e719-24a74"',
+117 verbose headers   'content-encoding': 'gzip',
+117 verbose headers   'cache-control': 'max-age=300',
+117 verbose headers   'content-length': '19886',
+117 verbose headers   'accept-ranges': 'bytes',
+117 verbose headers   date: 'Fri, 20 Oct 2017 13:31:34 GMT',
+117 verbose headers   via: '1.1 varnish',
+117 verbose headers   age: '53',
+117 verbose headers   connection: 'keep-alive',
+117 verbose headers   'x-served-by': 'cache-mad9427-MAD',
+117 verbose headers   'x-cache': 'HIT',
+117 verbose headers   'x-cache-hits': '2',
+117 verbose headers   'x-timer': 'S1508506295.887665,VS0,VE0',
+117 verbose headers   vary: 'Accept-Encoding, Accept' }
+118 silly get cb [ 200,
+118 silly get   { server: 'nginx/1.10.1',
+118 silly get     'content-type': 'application/json',
+118 silly get     'last-modified': 'Thu, 19 Oct 2017 17:55:37 GMT',
+118 silly get     etag: 'W/"59e8e719-24a74"',
+118 silly get     'content-encoding': 'gzip',
+118 silly get     'cache-control': 'max-age=300',
+118 silly get     'content-length': '19886',
+118 silly get     'accept-ranges': 'bytes',
+118 silly get     date: 'Fri, 20 Oct 2017 13:31:34 GMT',
+118 silly get     via: '1.1 varnish',
+118 silly get     age: '53',
+118 silly get     connection: 'keep-alive',
+118 silly get     'x-served-by': 'cache-mad9427-MAD',
+118 silly get     'x-cache': 'HIT',
+118 silly get     'x-cache-hits': '2',
+118 silly get     'x-timer': 'S1508506295.887665,VS0,VE0',
+118 silly get     vary: 'Accept-Encoding, Accept' } ]
+119 verbose get saving q to C:\Users\ejr\AppData\Roaming\npm-cache\registry.npmjs.org\q\.cache.json
+120 silly addNameRange number 2 { name: 'q', range: '*', hasData: true }
+121 silly addNameRange versions [ 'q',
+121 silly addNameRange   [ '0.0.0',
+121 silly addNameRange     '0.0.1',
+121 silly addNameRange     '0.0.2',
+121 silly addNameRange     '0.0.3',
+121 silly addNameRange     '0.1.0',
+121 silly addNameRange     '0.1.1',
+121 silly addNameRange     '0.1.2',
+121 silly addNameRange     '0.1.3',
+121 silly addNameRange     '0.1.4',
+121 silly addNameRange     '0.1.5',
+121 silly addNameRange     '0.1.6',
+121 silly addNameRange     '0.1.7',
+121 silly addNameRange     '0.1.8',
+121 silly addNameRange     '0.1.9',
+121 silly addNameRange     '0.2.0-rc1',
+121 silly addNameRange     '0.2.0',
+121 silly addNameRange     '0.2.1',
+121 silly addNameRange     '0.2.2',
+121 silly addNameRange     '0.2.3',
+121 silly addNameRange     '0.2.4',
+121 silly addNameRange     '0.2.5',
+121 silly addNameRange     '0.2.6',
+121 silly addNameRange     '0.2.7',
+121 silly addNameRange     '0.2.8',
+121 silly addNameRange     '0.2.9',
+121 silly addNameRange     '0.3.0',
+121 silly addNameRange     '0.2.10',
+121 silly addNameRange     '0.4.0',
+121 silly addNameRange     '0.4.1',
+121 silly addNameRange     '0.4.2',
+121 silly addNameRange     '0.4.4',
+121 silly addNameRange     '0.5.0',
+121 silly addNameRange     '0.5.1',
+121 silly addNameRange     '0.5.2',
+121 silly addNameRange     '0.5.3',
+121 silly addNameRange     '0.6.0',
+121 silly addNameRange     '0.7.0',
+121 silly addNameRange     '0.7.1',
+121 silly addNameRange     '0.7.2',
+121 silly addNameRange     '0.8.0',
+121 silly addNameRange     '0.8.1',
+121 silly addNameRange     '0.8.2',
+121 silly addNameRange     '0.8.3',
+121 silly addNameRange     '0.8.4',
+121 silly addNameRange     '0.8.5',
+121 silly addNameRange     '0.8.6',
+121 silly addNameRange     '0.8.7',
+121 silly addNameRange     '0.8.8',
+121 silly addNameRange     '0.8.9',
+121 silly addNameRange     '0.8.10',
+121 silly addNameRange     '0.8.11',
+121 silly addNameRange     '0.8.12',
+121 silly addNameRange     '0.9.0',
+121 silly addNameRange     '0.9.1',
+121 silly addNameRange     '0.9.2',
+121 silly addNameRange     '0.9.3',
+121 silly addNameRange     '0.9.4',
+121 silly addNameRange     '0.9.5',
+121 silly addNameRange     '0.9.6',
+121 silly addNameRange     '0.9.7',
+121 silly addNameRange     '1.0.0',
+121 silly addNameRange     '1.0.1',
+121 silly addNameRange     '2.0.0',
+121 silly addNameRange     '2.0.1',
+121 silly addNameRange     '2.0.2',
+121 silly addNameRange     '1.1.0',
+121 silly addNameRange     '1.1.1',
+121 silly addNameRange     '1.1.2',
+121 silly addNameRange     '2.0.3',
+121 silly addNameRange     '1.2.0',
+121 silly addNameRange     '1.2.1',
+121 silly addNameRange     '1.3.0',
+121 silly addNameRange     '1.4.0',
+121 silly addNameRange     '1.4.1',
+121 silly addNameRange     '1.5.0',
+121 silly addNameRange     '1.5.1' ] ]
+122 silly addNamed q@1.5.1
+123 verbose addNamed "1.5.1" is a plain semver version for q
+124 silly mapToRegistry name q
+125 silly mapToRegistry using default registry
+126 silly mapToRegistry registry https://registry.npmjs.org/
+127 silly mapToRegistry uri https://registry.npmjs.org/q
+128 verbose addRemoteTarball https://registry.npmjs.org/q/-/q-1.5.1.tgz not in flight; adding
+129 verbose addRemoteTarball [ 'https://registry.npmjs.org/q/-/q-1.5.1.tgz',
+129 verbose addRemoteTarball   '7e32f75b41381291d04611f1bf14109ac00651d7' ]
+130 info retry fetch attempt 1 at 2:27:49 PM
+131 info attempt registry request try #1 at 2:27:49 PM
+132 http fetch GET https://registry.npmjs.org/q/-/q-1.5.1.tgz
+133 http 304 https://registry.npmjs.org/xlsx-to-json
+134 verbose headers { date: 'Fri, 20 Oct 2017 13:31:34 GMT',
+134 verbose headers   via: '1.1 varnish',
+134 verbose headers   'cache-control': 'max-age=300',
+134 verbose headers   etag: 'W/"5967b6a5-2e96"',
+134 verbose headers   age: '0',
+134 verbose headers   connection: 'keep-alive',
+134 verbose headers   'x-served-by': 'cache-mad9428-MAD',
+134 verbose headers   'x-cache': 'MISS',
+134 verbose headers   'x-cache-hits': '0',
+134 verbose headers   'x-timer': 'S1508506295.885184,VS0,VE109',
+134 verbose headers   vary: 'Accept-Encoding, Accept' }
+135 silly get cb [ 304,
+135 silly get   { date: 'Fri, 20 Oct 2017 13:31:34 GMT',
+135 silly get     via: '1.1 varnish',
+135 silly get     'cache-control': 'max-age=300',
+135 silly get     etag: 'W/"5967b6a5-2e96"',
+135 silly get     age: '0',
+135 silly get     connection: 'keep-alive',
+135 silly get     'x-served-by': 'cache-mad9428-MAD',
+135 silly get     'x-cache': 'MISS',
+135 silly get     'x-cache-hits': '0',
+135 silly get     'x-timer': 'S1508506295.885184,VS0,VE109',
+135 silly get     vary: 'Accept-Encoding, Accept' } ]
+136 verbose etag https://registry.npmjs.org/xlsx-to-json from cache
+137 verbose get saving xlsx-to-json to C:\Users\ejr\AppData\Roaming\npm-cache\registry.npmjs.org\xlsx-to-json\.cache.json
+138 silly addNameRange number 2 { name: 'xlsx-to-json', range: '>=0.2.4 <0.3.0', hasData: true }
+139 silly addNameRange versions [ 'xlsx-to-json',
+139 silly addNameRange   [ '0.0.0',
+139 silly addNameRange     '0.0.1',
+139 silly addNameRange     '0.0.2',
+139 silly addNameRange     '0.1.0',
+139 silly addNameRange     '0.1.1',
+139 silly addNameRange     '0.2.0',
+139 silly addNameRange     '0.2.1',
+139 silly addNameRange     '0.2.2',
+139 silly addNameRange     '0.2.3',
+139 silly addNameRange     '0.2.4',
+139 silly addNameRange     '0.3.0' ] ]
+140 silly addNamed xlsx-to-json@0.2.4
+141 verbose addNamed "0.2.4" is a plain semver version for xlsx-to-json
+142 silly cache afterAdd xlsx-to-json@0.2.4
+143 verbose afterAdd C:\Users\ejr\AppData\Roaming\npm-cache\xlsx-to-json\0.2.4\package\package.json not in flight; writing
+144 verbose afterAdd C:\Users\ejr\AppData\Roaming\npm-cache\xlsx-to-json\0.2.4\package\package.json written
+145 http fetch 200 https://registry.npmjs.org/q/-/q-1.5.1.tgz
+146 silly fetchAndShaCheck shasum 7e32f75b41381291d04611f1bf14109ac00651d7
+147 verbose addTmpTarball C:\Users\ejr\AppData\Local\Temp\npm-16936-61400af4\registry.npmjs.org\q\-\q-1.5.1.tgz not in flight; adding
+148 verbose addTmpTarball already have metadata; skipping unpack for q@1.5.1
+149 silly cache afterAdd q@1.5.1
+150 verbose afterAdd C:\Users\ejr\AppData\Roaming\npm-cache\q\1.5.1\package\package.json not in flight; writing
+151 verbose afterAdd C:\Users\ejr\AppData\Roaming\npm-cache\q\1.5.1\package\package.json written
+152 silly install resolved [ { name: 'xlsx-to-json',
+152 silly install resolved     version: '0.2.4',
+152 silly install resolved     description: 'Convert xlsx to json',
+152 silly install resolved     main: 'index.js',
+152 silly install resolved     scripts: { test: 'mocha' },
+152 silly install resolved     repository:
+152 silly install resolved      { type: 'git',
+152 silly install resolved        url: 'git+https://github.com/DataGarage/node-xlsx-json.git' },
+152 silly install resolved     author:
+152 silly install resolved      { name: 'chilijung',
+152 silly install resolved        email: 'chilijung@gmail.com',
+152 silly install resolved        url: 'http://lijung.com/' },
+152 silly install resolved     license: 'MIT',
+152 silly install resolved     bugs: { url: 'https://github.com/DataGarage/node-xml-json/issues' },
+152 silly install resolved     homepage: 'https://github.com/DataGarage/node-xml-json',
+152 silly install resolved     dependencies: { xlsx: '0.7.6-g', csv: '~0.3.6' },
+152 silly install resolved     devDependencies: { mocha: '~1.17.1', should: '~3.1.2' },
+152 silly install resolved     gitHead: '5109b915061f22fa63069651830fd81ddba36222',
+152 silly install resolved     _id: 'xlsx-to-json@0.2.4',
+152 silly install resolved     _shasum: '037daf5f19d32efeb74bef54c6dfb4e2d9787bd5',
+152 silly install resolved     _from: 'xlsx-to-json@>=0.2.4 <0.3.0',
+152 silly install resolved     _npmVersion: '1.4.14',
+152 silly install resolved     _npmUser: { name: 'chilijung', email: 'chilijung@gmail.com' },
+152 silly install resolved     maintainers: [ [Object] ],
+152 silly install resolved     dist:
+152 silly install resolved      { shasum: '037daf5f19d32efeb74bef54c6dfb4e2d9787bd5',
+152 silly install resolved        tarball: 'https://registry.npmjs.org/xlsx-to-json/-/xlsx-to-json-0.2.4.tgz' },
+152 silly install resolved     directories: {},
+152 silly install resolved     _resolved: 'https://registry.npmjs.org/xlsx-to-json/-/xlsx-to-json-0.2.4.tgz',
+152 silly install resolved     readme: 'ERROR: No README data found!' },
+152 silly install resolved   { name: 'q',
+152 silly install resolved     version: '1.5.1',
+152 silly install resolved     description: 'A library for promises (CommonJS/Promises/A,B,D)',
+152 silly install resolved     homepage: 'https://github.com/kriskowal/q',
+152 silly install resolved     author:
+152 silly install resolved      { name: 'Kris Kowal',
+152 silly install resolved        email: 'kris@cixar.com',
+152 silly install resolved        url: 'https://github.com/kriskowal' },
+152 silly install resolved     keywords:
+152 silly install resolved      [ 'q',
+152 silly install resolved        'promise',
+152 silly install resolved        'promises',
+152 silly install resolved        'promises-a',
+152 silly install resolved        'promises-aplus',
+152 silly install resolved        'deferred',
+152 silly install resolved        'future',
+152 silly install resolved        'async',
+152 silly install resolved        'flow control',
+152 silly install resolved        'fluent',
+152 silly install resolved        'browser',
+152 silly install resolved        'node' ],
+152 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+152 silly install resolved     bugs: { url: 'http://github.com/kriskowal/q/issues' },
+152 silly install resolved     license: 'MIT',
+152 silly install resolved     main: 'q.js',
+152 silly install resolved     files: [ 'LICENSE', 'q.js', 'queue.js' ],
+152 silly install resolved     repository: { type: 'git', url: 'git://github.com/kriskowal/q.git' },
+152 silly install resolved     engines: { node: '>=0.6.0', teleport: '>=0.2.0' },
+152 silly install resolved     dependencies: {},
+152 silly install resolved     devDependencies:
+152 silly install resolved      { cover: '*',
+152 silly install resolved        grunt: '~0.4.1',
+152 silly install resolved        'grunt-cli': '~0.1.9',
+152 silly install resolved        'grunt-contrib-uglify': '~0.9.1',
+152 silly install resolved        'jasmine-node': '1.11.0',
+152 silly install resolved        jshint: '~2.1.9',
+152 silly install resolved        matcha: '~0.2.0',
+152 silly install resolved        opener: '*',
+152 silly install resolved        'promises-aplus-tests': '1.x' },
+152 silly install resolved     scripts:
+152 silly install resolved      { test: 'npm ls -s && jasmine-node spec && promises-aplus-tests spec/aplus-adapter && npm run -s lint',
+152 silly install resolved        'test-browser': 'opener spec/q-spec.html',
+152 silly install resolved        benchmark: 'matcha',
+152 silly install resolved        lint: 'jshint q.js',
+152 silly install resolved        cover: 'cover run jasmine-node spec && cover report html && opener cover_html/index.html',
+152 silly install resolved        minify: 'grunt',
+152 silly install resolved        prepublish: 'grunt' },
+152 silly install resolved     overlay: { teleport: [Object] },
+152 silly install resolved     directories: { test: './spec' },
+152 silly install resolved     gitHead: 'c2f5a6f35456389a806acca50bfd929cbe30c4cb',
+152 silly install resolved     _id: 'q@1.5.1',
+152 silly install resolved     _shasum: '7e32f75b41381291d04611f1bf14109ac00651d7',
+152 silly install resolved     _from: 'q@*',
+152 silly install resolved     _npmVersion: '2.14.2',
+152 silly install resolved     _nodeVersion: '0.10.32',
+152 silly install resolved     _npmUser: { name: 'kriskowal', email: 'kris.kowal@cixar.com' },
+152 silly install resolved     dist:
+152 silly install resolved      { shasum: '7e32f75b41381291d04611f1bf14109ac00651d7',
+152 silly install resolved        tarball: 'https://registry.npmjs.org/q/-/q-1.5.1.tgz' },
+152 silly install resolved     maintainers: [ [Object], [Object] ],
+152 silly install resolved     _npmOperationalInternal:
+152 silly install resolved      { host: 's3://npm-registry-packages',
+152 silly install resolved        tmp: 'tmp/q-1.5.1.tgz_1508435736930_0.7891315249726176' },
+152 silly install resolved     _resolved: 'https://registry.npmjs.org/q/-/q-1.5.1.tgz' } ]
+153 info install xlsx-to-json@0.2.4 into c:\git\node-express-angular
+154 info install q@1.5.1 into c:\git\node-express-angular
+155 info installOne xlsx-to-json@0.2.4
+156 verbose installOne of xlsx-to-json to c:\git\node-express-angular not in flight; installing
+157 info installOne q@1.5.1
+158 verbose installOne of q to c:\git\node-express-angular not in flight; installing
+159 verbose lock using C:\Users\ejr\AppData\Roaming\npm-cache\_locks\xlsx-to-json-93034fc002ad110c.lock for c:\git\node-express-angular\node_modules\xlsx-to-json
+160 silly install write writing xlsx-to-json 0.2.4 to c:\git\node-express-angular\node_modules\xlsx-to-json
+161 verbose lock using C:\Users\ejr\AppData\Roaming\npm-cache\_locks\q-a0e7afd4fa526ab5.lock for c:\git\node-express-angular\node_modules\q
+162 silly install write writing q 1.5.1 to c:\git\node-express-angular\node_modules\q
+163 verbose unbuild node_modules\xlsx-to-json
+164 silly gentlyRm c:\git\node-express-angular\node_modules\xlsx-to-json is being purged from base c:\git\node-express-angular
+165 verbose gentlyRm don't care about contents; nuking c:\git\node-express-angular\node_modules\xlsx-to-json
+166 verbose tar unpack C:\Users\ejr\AppData\Roaming\npm-cache\xlsx-to-json\0.2.4\package.tgz
+167 verbose tar unpacking to c:\git\node-express-angular\node_modules\xlsx-to-json
+168 silly gentlyRm c:\git\node-express-angular\node_modules\xlsx-to-json is being purged
+169 verbose gentlyRm don't care about contents; nuking c:\git\node-express-angular\node_modules\xlsx-to-json
+170 verbose unbuild node_modules\q
+171 silly gunzTarPerm modes [ '777', '666' ]
+172 silly gentlyRm c:\git\node-express-angular\node_modules\q is being purged from base c:\git\node-express-angular
+173 verbose gentlyRm don't care about contents; nuking c:\git\node-express-angular\node_modules\q
+174 verbose tar unpack C:\Users\ejr\AppData\Roaming\npm-cache\q\1.5.1\package.tgz
+175 verbose tar unpacking to c:\git\node-express-angular\node_modules\q
+176 silly gentlyRm c:\git\node-express-angular\node_modules\q is being purged
+177 verbose gentlyRm don't care about contents; nuking c:\git\node-express-angular\node_modules\q
+178 silly gunzTarPerm modes [ '777', '666' ]
+179 silly gunzTarPerm extractEntry package.json
+180 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+181 silly gunzTarPerm extractEntry package.json
+182 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+183 silly gunzTarPerm extractEntry .npmignore
+184 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+185 silly gunzTarPerm extractEntry README.md
+186 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+187 silly gunzTarPerm extractEntry index.js
+188 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+189 silly gunzTarPerm extractEntry .travis.yml
+190 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+191 silly gunzTarPerm extractEntry README.md
+192 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+193 silly gunzTarPerm extractEntry LICENSE
+194 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+195 silly gunzTarPerm extractEntry q.js
+196 silly gunzTarPerm modified mode [ 'q.js', 420, 438 ]
+197 silly gunzTarPerm extractEntry queue.js
+198 silly gunzTarPerm modified mode [ 'queue.js', 420, 438 ]
+199 silly gunzTarPerm extractEntry CHANGES.md
+200 silly gunzTarPerm modified mode [ 'CHANGES.md', 420, 438 ]
+201 silly gunzTarPerm extractEntry libs/index.js
+202 silly gunzTarPerm modified mode [ 'libs/index.js', 420, 438 ]
+203 silly gunzTarPerm extractEntry sample/sample.js
+204 silly gunzTarPerm modified mode [ 'sample/sample.js', 420, 438 ]
+205 silly gunzTarPerm extractEntry sample/interview.xlsx
+206 silly gunzTarPerm modified mode [ 'sample/interview.xlsx', 420, 438 ]
+207 silly gunzTarPerm extractEntry sample/tags_test.json
+208 silly gunzTarPerm modified mode [ 'sample/tags_test.json', 420, 438 ]
+209 silly gunzTarPerm extractEntry sample/test.json
+210 silly gunzTarPerm modified mode [ 'sample/test.json', 420, 438 ]
+211 silly gunzTarPerm extractEntry test/xlsx-json.test.js
+212 silly gunzTarPerm modified mode [ 'test/xlsx-json.test.js', 420, 438 ]
+213 silly gunzTarPerm extractEntry test/mocha.opts
+214 silly gunzTarPerm modified mode [ 'test/mocha.opts', 420, 438 ]
+215 verbose write writing to c:\git\node-express-angular\node_modules\q\package.json
+216 info preinstall q@1.5.1
+217 verbose readDependencies loading dependencies from c:\git\node-express-angular\node_modules\q\package.json
+218 verbose readDependencies loading dependencies from c:\git\node-express-angular\node_modules\q\package.json
+219 silly install resolved []
+220 verbose about to build c:\git\node-express-angular\node_modules\q
+221 info build c:\git\node-express-angular\node_modules\q
+222 info linkStuff q@1.5.1
+223 silly linkStuff q@1.5.1 has c:\git\node-express-angular\node_modules as its parent node_modules
+224 verbose linkBins q@1.5.1
+225 verbose linkMans q@1.5.1
+226 verbose rebuildBundles q@1.5.1
+227 info install q@1.5.1
+228 info postinstall q@1.5.1
+229 verbose unlock done using C:\Users\ejr\AppData\Roaming\npm-cache\_locks\q-a0e7afd4fa526ab5.lock for c:\git\node-express-angular\node_modules\q
+230 verbose write writing to c:\git\node-express-angular\node_modules\xlsx-to-json\package.json
+231 info preinstall xlsx-to-json@0.2.4
+232 verbose readDependencies loading dependencies from c:\git\node-express-angular\node_modules\xlsx-to-json\package.json
+233 silly prepareForInstallMany adding xlsx@0.7.6-g from xlsx-to-json dependencies
+234 silly prepareForInstallMany adding csv@~0.3.6 from xlsx-to-json dependencies
+235 verbose readDependencies loading dependencies from c:\git\node-express-angular\node_modules\xlsx-to-json\package.json
+236 silly cache add args [ 'xlsx@0.7.6-g', null ]
+237 verbose cache add spec xlsx@0.7.6-g
+238 silly cache add args [ 'csv@~0.3.6', null ]
+239 verbose cache add spec csv@~0.3.6
+240 silly cache add parsed spec Result {
+240 silly cache add   raw: 'xlsx@0.7.6-g',
+240 silly cache add   scope: null,
+240 silly cache add   name: 'xlsx',
+240 silly cache add   rawSpec: '0.7.6-g',
+240 silly cache add   spec: '0.7.6-g',
+240 silly cache add   type: 'version' }
+241 silly addNamed xlsx@0.7.6-g
+242 verbose addNamed "0.7.6-g" is a plain semver version for xlsx
+243 silly mapToRegistry name xlsx
+244 silly mapToRegistry using default registry
+245 silly mapToRegistry registry https://registry.npmjs.org/
+246 silly mapToRegistry uri https://registry.npmjs.org/xlsx
+247 verbose addNameVersion registry:https://registry.npmjs.org/xlsx not in flight; fetching
+248 silly cache add parsed spec Result {
+248 silly cache add   raw: 'csv@~0.3.6',
+248 silly cache add   scope: null,
+248 silly cache add   name: 'csv',
+248 silly cache add   rawSpec: '~0.3.6',
+248 silly cache add   spec: '>=0.3.6 <0.4.0',
+248 silly cache add   type: 'range' }
+249 silly addNamed csv@>=0.3.6 <0.4.0
+250 verbose addNamed ">=0.3.6 <0.4.0" is a valid semver range for csv
+251 silly addNameRange { name: 'csv', range: '>=0.3.6 <0.4.0', hasData: false }
+252 silly mapToRegistry name csv
+253 silly mapToRegistry using default registry
+254 silly mapToRegistry registry https://registry.npmjs.org/
+255 silly mapToRegistry uri https://registry.npmjs.org/csv
+256 verbose addNameRange registry:https://registry.npmjs.org/csv not in flight; fetching
+257 verbose request uri https://registry.npmjs.org/xlsx
+258 verbose request no auth needed
+259 info attempt registry request try #1 at 2:27:50 PM
+260 verbose etag W/"59e55640-20164"
+261 verbose lastModified Tue, 17 Oct 2017 01:00:48 GMT
+262 http request GET https://registry.npmjs.org/xlsx
+263 verbose request uri https://registry.npmjs.org/csv
+264 verbose request no auth needed
+265 info attempt registry request try #1 at 2:27:50 PM
+266 verbose etag W/"59e77d45-f832"
+267 verbose lastModified Wed, 18 Oct 2017 16:11:49 GMT
+268 http request GET https://registry.npmjs.org/csv
+269 http 200 https://registry.npmjs.org/csv
+270 verbose headers { server: 'nginx/1.10.1',
+270 verbose headers   'content-type': 'application/json',
+270 verbose headers   'last-modified': 'Fri, 20 Oct 2017 12:08:50 GMT',
+270 verbose headers   etag: 'W/"59e9e752-108f8"',
+270 verbose headers   'content-encoding': 'gzip',
+270 verbose headers   'cache-control': 'max-age=300',
+270 verbose headers   'content-length': '7552',
+270 verbose headers   'accept-ranges': 'bytes',
+270 verbose headers   date: 'Fri, 20 Oct 2017 13:31:35 GMT',
+270 verbose headers   via: '1.1 varnish',
+270 verbose headers   age: '16',
+270 verbose headers   connection: 'keep-alive',
+270 verbose headers   'x-served-by': 'cache-mad9421-MAD',
+270 verbose headers   'x-cache': 'HIT',
+270 verbose headers   'x-cache-hits': '1',
+270 verbose headers   'x-timer': 'S1508506296.786044,VS0,VE0',
+270 verbose headers   vary: 'Accept-Encoding, Accept' }
+271 silly get cb [ 200,
+271 silly get   { server: 'nginx/1.10.1',
+271 silly get     'content-type': 'application/json',
+271 silly get     'last-modified': 'Fri, 20 Oct 2017 12:08:50 GMT',
+271 silly get     etag: 'W/"59e9e752-108f8"',
+271 silly get     'content-encoding': 'gzip',
+271 silly get     'cache-control': 'max-age=300',
+271 silly get     'content-length': '7552',
+271 silly get     'accept-ranges': 'bytes',
+271 silly get     date: 'Fri, 20 Oct 2017 13:31:35 GMT',
+271 silly get     via: '1.1 varnish',
+271 silly get     age: '16',
+271 silly get     connection: 'keep-alive',
+271 silly get     'x-served-by': 'cache-mad9421-MAD',
+271 silly get     'x-cache': 'HIT',
+271 silly get     'x-cache-hits': '1',
+271 silly get     'x-timer': 'S1508506296.786044,VS0,VE0',
+271 silly get     vary: 'Accept-Encoding, Accept' } ]
+272 verbose get saving csv to C:\Users\ejr\AppData\Roaming\npm-cache\registry.npmjs.org\csv\.cache.json
+273 silly addNameRange number 2 { name: 'csv', range: '>=0.3.6 <0.4.0', hasData: true }
+274 silly addNameRange versions [ 'csv',
+274 silly addNameRange   [ '0.0.1',
+274 silly addNameRange     '0.0.2',
+274 silly addNameRange     '0.0.3',
+274 silly addNameRange     '0.0.5',
+274 silly addNameRange     '0.0.6',
+274 silly addNameRange     '0.0.7',
+274 silly addNameRange     '0.0.9',
+274 silly addNameRange     '0.0.10',
+274 silly addNameRange     '0.0.11',
+274 silly addNameRange     '0.0.12',
+274 silly addNameRange     '0.0.13',
+274 silly addNameRange     '0.0.14',
+274 silly addNameRange     '0.0.15',
+274 silly addNameRange     '0.0.16',
+274 silly addNameRange     '0.0.17',
+274 silly addNameRange     '0.0.18',
+274 silly addNameRange     '0.0.19',
+274 silly addNameRange     '0.2.0',
+274 silly addNameRange     '0.2.1',
+274 silly addNameRange     '0.2.2',
+274 silly addNameRange     '0.2.3',
+274 silly addNameRange     '0.1.0',
+274 silly addNameRange     '0.2.4',
+274 silly addNameRange     '0.2.6',
+274 silly addNameRange     '0.2.7',
+274 silly addNameRange     '0.2.8',
+274 silly addNameRange     '0.2.9',
+274 silly addNameRange     '0.3.0',
+274 silly addNameRange     '0.3.2',
+274 silly addNameRange     '0.3.3',
+274 silly addNameRange     '0.3.4',
+274 silly addNameRange     '0.3.5',
+274 silly addNameRange     '0.3.6',
+274 silly addNameRange     '0.3.7',
+274 silly addNameRange     '0.4.0',
+274 silly addNameRange     '0.4.1',
+274 silly addNameRange     '0.4.2',
+274 silly addNameRange     '0.4.4',
+274 silly addNameRange     '0.4.5',
+274 silly addNameRange     '0.4.6',
+274 silly addNameRange     '1.1.0',
+274 silly addNameRange     '1.1.1',
+274 silly addNameRange     '1.2.0',
+274 silly addNameRange     '1.2.1',
+274 silly addNameRange     '2.0.0' ] ]
+275 silly addNamed csv@0.3.7
+276 verbose addNamed "0.3.7" is a plain semver version for csv
+277 http 304 https://registry.npmjs.org/xlsx
+278 verbose headers { date: 'Fri, 20 Oct 2017 13:31:35 GMT',
+278 verbose headers   via: '1.1 varnish',
+278 verbose headers   'cache-control': 'max-age=300',
+278 verbose headers   etag: 'W/"59e55640-20164"',
+278 verbose headers   age: '0',
+278 verbose headers   connection: 'keep-alive',
+278 verbose headers   'x-served-by': 'cache-mad9430-MAD',
+278 verbose headers   'x-cache': 'MISS',
+278 verbose headers   'x-cache-hits': '0',
+278 verbose headers   'x-timer': 'S1508506296.776136,VS0,VE84',
+278 verbose headers   vary: 'Accept-Encoding, Accept' }
+279 silly get cb [ 304,
+279 silly get   { date: 'Fri, 20 Oct 2017 13:31:35 GMT',
+279 silly get     via: '1.1 varnish',
+279 silly get     'cache-control': 'max-age=300',
+279 silly get     etag: 'W/"59e55640-20164"',
+279 silly get     age: '0',
+279 silly get     connection: 'keep-alive',
+279 silly get     'x-served-by': 'cache-mad9430-MAD',
+279 silly get     'x-cache': 'MISS',
+279 silly get     'x-cache-hits': '0',
+279 silly get     'x-timer': 'S1508506296.776136,VS0,VE84',
+279 silly get     vary: 'Accept-Encoding, Accept' } ]
+280 verbose etag https://registry.npmjs.org/xlsx from cache
+281 verbose get saving xlsx to C:\Users\ejr\AppData\Roaming\npm-cache\registry.npmjs.org\xlsx\.cache.json
+282 silly cache afterAdd csv@0.3.7
+283 verbose afterAdd C:\Users\ejr\AppData\Roaming\npm-cache\csv\0.3.7\package\package.json not in flight; writing
+284 verbose afterAdd C:\Users\ejr\AppData\Roaming\npm-cache\csv\0.3.7\package\package.json written
+285 verbose about to build c:\git\node-express-angular\node_modules\xlsx-to-json
+286 verbose unlock done using C:\Users\ejr\AppData\Roaming\npm-cache\_locks\xlsx-to-json-93034fc002ad110c.lock for c:\git\node-express-angular\node_modules\xlsx-to-json
+287 verbose stack Error: version not found: xlsx@0.7.6-g
+287 verbose stack     at setData (C:\Program Files\nodejs\node_modules\npm\lib\cache\add-named.js:137:12)
+287 verbose stack     at RES (C:\Program Files\nodejs\node_modules\npm\node_modules\inflight\inflight.js:23:14)
+287 verbose stack     at f (C:\Program Files\nodejs\node_modules\npm\node_modules\once\once.js:17:25)
+287 verbose stack     at fixName (C:\Program Files\nodejs\node_modules\npm\lib\cache\add-named.js:29:5)
+287 verbose stack     at saved (C:\Program Files\nodejs\node_modules\npm\lib\cache\caching-client.js:173:7)
+287 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:210:7
+287 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+288 verbose statusCode 404
+289 verbose cwd c:\git\node-express-angular
+290 error Windows_NT 6.3.9600
+291 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+292 error node v4.2.1
+293 error npm  v2.14.7
+294 error version not found: xlsx@0.7.6-g
+295 error If you need help, you may report this error at:
+295 error     <https://github.com/npm/npm/issues>
+296 verbose exit [ 1, true ]
+297 verbose unbuild node_modules\xlsx-to-json
+298 info preuninstall xlsx-to-json@0.2.4
+299 info uninstall xlsx-to-json@0.2.4
+300 verbose unbuild rmStuff xlsx-to-json@0.2.4 from c:\git\node-express-angular\node_modules
+301 info postuninstall xlsx-to-json@0.2.4
+302 silly gentlyRm c:\git\node-express-angular\node_modules\xlsx-to-json is being purged from base c:\git\node-express-angular
+303 verbose gentlyRm don't care about contents; nuking c:\git\node-express-angular\node_modules\xlsx-to-json
+304 silly vacuum-fs purging c:\git\node-express-angular\node_modules\xlsx-to-json
+305 silly vacuum-fs quitting because other entries in c:\git\node-express-angular\node_modules
