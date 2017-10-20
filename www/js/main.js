@@ -43,37 +43,6 @@ function inShare(url, title, desc){
     window.open("http://www.linkedin.com/shareArticle?mini=true&url="+window.location);
 }
 
-function parseComponent(elem, scope){
-    scope = scope || {};
-    var htmlElement = elem;
-
-    if($(htmlElement).attr("data-init") == "false") { return; }
-
-    require([$(htmlElement).attr("data-component")], function(component){
-        if(typeof component == 'function'){
-            var comp = new component(htmlElement, scope);
-        }
-    });
-}
-
-function deferImagesLoad(container, callBack){
-    $(container).each(function(){
-        var sup = this;
-        var images = $(this).find("img");
-        var imagesNr = $(images).length;
-        var loaded = 0;
-
-        $(images).one("load", function() {
-          loaded ++;
-          if(loaded >= imagesNr){
-            //console.log('all images loaded');
-            callBack(sup);
-          }
-        }).each(function() {
-          if(this.complete) $(this).load();
-        });
-    });
-}
 
 function scrollToTop(){
     $("html, body").stop().animate({scrollTop:0}, '300', 'swing');
@@ -93,16 +62,6 @@ var desktop = 1024;
 require(['plugins'], function(plugins){
 
 
-    //require dynamic Modules
-    if($("[data-pageModule]").length > 0){
-        require(["module/"+$("[data-pageModule]").attr("data-pageModule")]);        
-    }
-
-    //loading Individual components
-    $("[data-component]").each(function(){
-        parseComponent(this);
-    });
-
     require(['angular'], function(){
         $("[data-angular-module]").each(function(){
             var htmlElement = this;
@@ -113,25 +72,6 @@ require(['plugins'], function(plugins){
         });
     });
 
-    $('[data-load-template]').each(function(){
-        var url = $(this).attr('data-load-template');
-        var _self = this;
-
-        $.ajax({
-          content: 'html',
-          url: url,
-          context: this
-        }).done(function(data) {
-          $(_self).append(data);
-
-          var scope = $(_self).attr('data-scope');
-
-          //parsing components
-          $(_self).find("[data-component]").each(function(){
-            parseComponent(this, scope);
-          });
-        });//end done
-    });//end load template
 
     //set link to all data-href boxes
     $('[data-href]').click(function(){
