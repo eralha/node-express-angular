@@ -53,6 +53,7 @@ DB.prototype.dbConnect = function(callback){
 	return this.dbConnectDefer.promise;
 }//END DB CONNECT
 
+
 /**
  * Retrieves Users from database
  * @function
