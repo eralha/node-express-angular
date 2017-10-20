@@ -17,60 +17,6 @@ requirejs.config({
     ]
 });
 
-function initCycleWithPager(cycleConfig, CycleSelector, PagerSelector){
-    if($(CycleSelector).hasClass('cycle__noparse')){ return; }
-
-    $(CycleSelector).on('cycle-before', function(event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag){
-        $(PagerSelector).find("li").removeClass("selected");
-        $(PagerSelector).find("li._slide_"+optionHash.nextSlide).addClass("selected");
-    });
-
-    //we initialize the pager when the cycle is initialized
-    $(CycleSelector).on('cycle-initialized', function(event, optionHash){
-        var pagerbase = '<ul class="cycle_pager">{content}</ul>';
-
-        var h = "";
-        if(optionHash.slideCount > 1){
-            for(var i = 0; i < optionHash.slideCount; i++){
-            h += "<li class='_slide_"+i+"' data-index='"+i+"'></li>";
-            }
-        }
-
-        pagerbase = String(pagerbase).replace("{content}", h);
-
-        var html = "";
-        //html += pagerbase;
-        (optionHash.slideCount <= 1)? html = h : html += pagerbase;
-
-        //select the first element of the pager
-        if($(PagerSelector).find('ul').length){
-            $(PagerSelector).find('ul').html(html);
-            $(PagerSelector).find("li._slide_0").addClass("selected");
-            //$(PagerSelector+" li._slide_0").addClass("selected");
-
-            //assign li click functions
-            $(PagerSelector).find("li").click(function(){
-                $(CycleSelector).cycle('goto', $(this).attr("data-index"));
-            });
-        }
-
-        //left and right buttons event handler
-            $(PagerSelector).find(".prev").click(function(){
-                $(CycleSelector).cycle('prev');
-            });
-            $(PagerSelector).find(".next").click(function(){
-                $(CycleSelector).cycle('next');
-            });
-    });
-
-    $(CycleSelector).removeClass('cycle__component-no_js');
-    $(CycleSelector).cycle(cycleConfig);
-}
-function wrapCenter(selector){
-    $(selector).each(function(){
-       $(this).wrap("<div class='outer-center'><div class='inner-center'></div></div>");
-    });
-}
 
 function fbShare(){
     window.open("http://www.facebook.com/sharer/sharer.php?u="+window.location+"?v="+Math.random());
