@@ -53,5 +53,25 @@ DB.prototype.dbConnect = function(callback){
 	return this.dbConnectDefer.promise;
 }//END DB CONNECT
 
+/**
+ * Retrieves Users from database
+ * @function
+ */
+DB.prototype.getUsers = function() {
+  var usersDefer = Q.defer();
+
+  if(this.db){
+	this.db.collection('testColl').find({}).toArray(function(err, results){
+		usersDefer.resolve(results);
+	}, function(){ //Close connection after reading
+		db.close();
+	});
+  }else{
+  	usersDefer.reject('Error, DB NOT CONNECTED');
+  }
+
+  return usersDefer.promise;
+}
+
 
 module.exports = new DB();

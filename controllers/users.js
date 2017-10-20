@@ -10,7 +10,9 @@ router.get('/', function(req, res, next) {
 	return;
 	*/
 
-	res.json({'users':'ALL'}); 
+	GLOBAL.DB.getUsers().then(function(docs){
+		res.json({'users':'ALL', numUser: docs.length});
+	});
 });
 
 router.get('/:id', function(req, res) {

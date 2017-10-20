@@ -9,9 +9,9 @@ var config = require('./config');
 var db = require('./models/db.js');
 
 //Try connect to DB
-if(GLOBAL.DBPool === undefined){
-	db.dbConnect().then(function(db){
-		GLOBAL.DBPool = db;
+if(GLOBAL.DB === undefined){
+	db.dbConnect().then(function(mongoDBO){
+		GLOBAL.DB = db;
 		console.log('DB connected');
 	});
 }
