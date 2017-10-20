@@ -61,6 +61,7 @@ DB.prototype.dbConnect = function(callback){
 DB.prototype.getUsers = function() {
   var usersDefer = Q.defer();
 
+  //Test if DB is online if not return error.
   if(this.db){
 	this.db.collection('testColl').find({}).toArray(function(err, results){
 		usersDefer.resolve(results);
