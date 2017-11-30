@@ -16,6 +16,10 @@ if(GLOBAL.DB === undefined){
 	});
 }
 
+var bodyParser = require('body-parser')
+	app.use( bodyParser.json() );
+	app.use(express.json());
+
 morgan.token('res', function(res) {
 	return res.headers['user-agent'];
 });
